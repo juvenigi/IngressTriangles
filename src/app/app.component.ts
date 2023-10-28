@@ -26,10 +26,10 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   private drawOnCanvas(): void {
-    const ctx = this.triangleCanvas.nativeElement.getContext("2d");
+    const ctx = this.triangleCanvas.nativeElement.getContext('2d');
     if (!ctx) throw Error('no canvas context found');
-    ctx.canvas.width = 200;
-    ctx.canvas.height = 200;
+    ctx.canvas.width = 500;
+    ctx.canvas.height = 500;
     const point = this.initPoint(10);
 
     ctx.translate(100, 100);
@@ -91,7 +91,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   private triArea(points: Array<{ x: number, y: number }>) {
-    if (points.length !== 3) throw Error("Must contain three vertices.")
+    if (points.length !== 3) throw Error('Must contain three vertices.');
 
     return Math.abs(
       (
