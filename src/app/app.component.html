@@ -1,12 +1,12 @@
-<canvas #triCanvas></canvas>
-
-<ul>
-  <li>test</li>
-</ul>
-
-
-<ul>
-  <li *ngFor="let t of trees">
-    {{t.toString()}}
-  </li>
-</ul>
+<div class="container">
+  <div class="row my-4 justify-content-center">
+    <div class="col-auto">
+      <canvas #triCanvas class="canvas"></canvas>
+    </div>
+  </div>
+  <ul>
+    <li *ngFor="let t of trees">
+      {{t.toString()}}
+    </li>
+  </ul>
+</div>

@@ -17,10 +17,11 @@ export class AppComponent implements OnInit, AfterViewInit {
   triangleCanvas!: ElementRef<HTMLCanvasElement>;
 
   ngOnInit() {
-
+    // this.drawOnCanvas();
   }
 
   ngAfterViewInit() {
+    // html template needs to be initialized for ViewChild to work.
     this.drawOnCanvas();
 
   }
